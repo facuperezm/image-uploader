@@ -8,12 +8,12 @@ import Image from 'next/image'
 
 export default function Result() {
 	const [imageUrl, setImageUrl] = useState('')
-	const { imageRef } = useImageContext()
+	const { image } = useImageContext()
 
 	useEffect(() => {
 		const getUrl = async () => {
-			if (imageRef) {
-				const imgUrl = await getDownloadURL(imageRef)
+			if (image) {
+				const imgUrl = await getDownloadURL(image)
 				setImageUrl(imgUrl)
 			}
 		}
