@@ -1,3 +1,4 @@
+import LoadingBar from '@/components/ui/LoadingBar'
 import Uploader from '../components/ui/Uploader'
 
 export default function Home() {
